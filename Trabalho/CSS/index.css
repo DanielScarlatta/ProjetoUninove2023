@@ -1,0 +1,151 @@
+/* Estilos para a barra de navegação e cabeçalho */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 200px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        .search-bar button {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .cadastro {
+            display: flex;
+            align-items: center;
+        }
+
+        .cadastro input[type="text"],
+        .cadastro input[type="email"],
+        .cadastro button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .cadastro input[type="text"],
+        .cadastro input[type="email"] {
+            width: 150px;
+        }
+
+        .cadastro button {
+            background-color: #555;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Estilos para o submenu */
+        .submenu {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .submenu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+        }
+
+        /* Estilos para o select */
+select.categoria-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    width: 150px;
+    margin-right: auto; /* Para alinhar à esquerda no submenu */
+}
+
+/* Estilizar a seta dropdown do select (o estilo pode variar dependendo do navegador) */
+select.categoria-select::-ms-expand,
+select.categoria-select::-webkit-select-arrow {
+    display: none; /* Esconde a seta dropdown */
+}
+
+/* Estilizar quando o select está focado */
+select.categoria-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+        /* Estilos para os banners */
+        .banner {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Estilos para o rodapé */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .banner-rotativo {
+    width: 100%;
+    max-width: 800px; /* Ajuste o tamanho do banner conforme necessário */
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-rotativo img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    animation: banner-animacao 6s linear infinite; /* Ajuste a duração da animação conforme necessário */
+}
+
+@keyframes banner-animacao {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    10%, 90% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.banner-estatico {
+    width: 100%;
+    max-width: 200px; /* Ajuste o tamanho do banner conforme necessário */
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.banner-estatico img {
+    max-width: 100%;
+    height: auto;
+}
